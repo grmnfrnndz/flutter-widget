@@ -14,8 +14,12 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(selectedColor: 3).getTheme(),
+      theme: AppTheme(selectedColor: 4).getTheme(),
       home: const HomeScreen(),
+      routes: {
+        '/buttons': (_) => const ButtonsScreen(),
+        '/cards': (_) => const CardsScreen(),
+      },
     );
   }
 }
