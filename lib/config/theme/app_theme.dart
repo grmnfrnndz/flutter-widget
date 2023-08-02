@@ -28,7 +28,7 @@ final int selectedColor;
     useMaterial3: true,
     brightness: Brightness.light,
     colorSchemeSeed: _colorList[selectedColor],
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       centerTitle: true
     ),
   );

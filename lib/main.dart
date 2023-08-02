@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
 
+import 'config/router/app_router.dart';
 import 'config/theme/app_theme.dart';
 
 void main() {
@@ -12,14 +13,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
       theme: AppTheme(selectedColor: 4).getTheme(),
-      home: const HomeScreen(),
-      routes: {
-        '/buttons': (_) => const ButtonsScreen(),
-        '/cards': (_) => const CardsScreen(),
-      },
+      
     );
   }
 }
