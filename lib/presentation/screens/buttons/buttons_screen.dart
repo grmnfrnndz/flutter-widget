@@ -53,7 +53,7 @@ class _ButtonsView extends StatelessWidget {
             TextButton(onPressed: () {}, child: const Text('TextButton')),
             TextButton.icon(onPressed: () {}, icon: const Icon(Icons.one_x_mobiledata_outlined), label: const Text('TextButton')),
 
-            Custombutton(),
+            const Custombutton(),
 
 
             IconButton(onPressed: (){}, icon: const Icon(Icons.add_a_photo_rounded)),
@@ -86,7 +86,7 @@ class Custombutton extends StatelessWidget {
         color: colors.primary,
         child: InkWell(
           onTap: () {},
-          child: Padding(
+          child: const Padding(
             padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
             child: Text('Custombutton', style: TextStyle(color: Colors.white))),
         ),
