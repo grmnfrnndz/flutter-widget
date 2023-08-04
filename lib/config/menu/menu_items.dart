@@ -20,4 +20,5 @@ const appMenuItems = <MenuItem> [
   MenuItem(title: 'Buttons', subTitle: 'Many button on flutter', link: '/buttons', icon: Icons.smart_button_outlined),
   MenuItem(title: 'Cards', subTitle: 'Container with style', link: '/cards', icon: Icons.credit_card_outlined),
   MenuItem(title: 'ProgressIndicators', subTitle: 'Generals and Controled', link: '/progress', icon: Icons.refresh_outlined),
+  MenuItem(title: 'Snackbar', subTitle: 'Snackbar and Dialog', link: '/snackbar', icon: Icons.info_outline),
 ];
