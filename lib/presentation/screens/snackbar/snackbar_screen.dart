@@ -19,26 +19,24 @@ class SnackBarScreen extends StatelessWidget {
   }
 
 
-  void OpenDialog(BuildContext context) {
-
-      final colors = Theme.of(context).colorScheme;
+  void openDialog(BuildContext context) {
 
       showDialog(
         barrierDismissible: false,
         context: context, 
         builder: (context) => AlertDialog(
           backgroundColor: Colors.blue[50],
-          title: Text('estas seguro ?'),
-          content: Text('Veniam elit ad veniam nostrud tempor amet sunt do exercitation occaecat.'),
+          title: const Text('estas seguro ?'),
+          content: const Text('Veniam elit ad veniam nostrud tempor amet sunt do exercitation occaecat.'),
           actions: [
             TextButton(onPressed: () {
               context.pop();
-            }, child: Text('Cancelar')),
+            }, child: const Text('Cancelar')),
             
             FilledButton(onPressed: () {
 
               context.pop();
-            }, child: Text('Aceptar')),
+            }, child: const Text('Aceptar')),
 
           ],
         )
@@ -68,15 +66,15 @@ class SnackBarScreen extends StatelessWidget {
               showAboutDialog(applicationName: 'Widgets APP',
                 context: context,
                 children: [
-                  Text('Consequat nostrud sunt quis est esse ut magna consequat occaecat sunt reprehenderit pariatur excepteur enim.')
+                  const Text('Consequat nostrud sunt quis est esse ut magna consequat occaecat sunt reprehenderit pariatur excepteur enim.')
                 ],
               );
-            }, child: Text('Licences Use')),
+            }, child: const Text('Licences Use')),
             FilledButton(onPressed: () {
 
-              OpenDialog(context);
+              openDialog(context);
 
-            }, child: Text('Show Dialog')),
+            }, child: const Text('Show Dialog')),
           ],
         ),
       ),
