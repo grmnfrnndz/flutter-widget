@@ -115,8 +115,8 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
         onPressed: () => context.pop(),
         child: isLoading ?  SpinPerfect(
             infinite: true,
-            child: Icon(Icons.no_backpack)
-          ) : FadeIn(child: Icon(Icons.no_backpack))
+            child: const Icon(Icons.no_backpack)
+          ) : FadeIn(child: const Icon(Icons.no_backpack))
       ),
     );
   }

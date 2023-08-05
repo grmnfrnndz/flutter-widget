@@ -25,4 +25,6 @@ const appMenuItems = <MenuItem> [
   MenuItem(title: 'UI Controls + Tiles', subTitle: 'Controls on Flutters', link: '/ui-controls', icon: Icons.car_rental_outlined),
   MenuItem(title: 'Introduction App', subTitle: 'Small Tutorial Learn App', link: '/tutorial', icon: Icons.access_alarm_outlined),
   MenuItem(title: 'InfiniteScroll + Pull To Refresh', subTitle: 'List infinite and pull to refresh', link: '/infinite', icon: Icons.list_alt_outlined),
+  MenuItem(title: 'Counter With Riverpod', subTitle: 'Counter with Riverpod', link: '/counter', icon: Icons.plus_one_outlined),
+  MenuItem(title: 'Change Theme With Riverpod', subTitle: 'Change theme with Riverpod', link: '/theme-change', icon: Icons.theater_comedy),
 ];
